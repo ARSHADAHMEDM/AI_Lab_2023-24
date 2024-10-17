@@ -67,7 +67,7 @@ Step 10 : Obtain the plan for given problem.<br>
 
 ### Output/Plan:
 
-![alt](.blockworld.png)
+![alt](./blockworld.png)
 
 ### Result:
 Thus the plan was found for the initial and goal state of block world problem.
