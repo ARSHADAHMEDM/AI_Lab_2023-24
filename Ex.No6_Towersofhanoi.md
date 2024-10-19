@@ -1,4 +1,4 @@
-# Ex.No: 6   Logic Programming – Factorial of number   
+# Ex.No: 6   Towers of Hanoi _ Prolog   
 ### DATE:                                                                            
 ### REGISTER NUMBER : 212222040014
 ### AIM: 
