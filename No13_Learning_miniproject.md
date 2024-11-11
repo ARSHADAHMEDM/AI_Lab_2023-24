@@ -8,43 +8,43 @@ The aim of this project is to develop a machine learning-based heart disease pre
 
 ## Algorithm
 
-1.Start the program.
+1. Start the program.
 
-2.Import necessary packages
+2. Import necessary packages
 Import libraries, including:
 
-3.NumPy for numerical operations,
+3. NumPy for numerical operations,
 Pandas for data handling,
 Sklearn (specifically modules for model building, evaluation, and preprocessing),
 Streamlit for creating the user interface.
 Load the loan dataset
 Use pd.read_csv() in Pandas to load the loan dataset into a DataFrame.
 
-4.Check for missing values in the dataset
+4. Check for missing values in the dataset
 Identify missing values using df.isnull().sum(). Handle missing values either by filling with median values (using fillna(df.median())) or dropping rows if necessary.
 
-5.Encode categorical features
+5. Encode categorical features
 If the dataset contains categorical variables, convert them into numerical values using techniques like one-hot encoding or label encoding with Sklearn’s LabelEncoder or pd.get_dummies().
 
-6.Split the data into input features (X) and target label (Y)
+6. Split the data into input features (X) and target label (Y)
 Define input features X (the predictor variables) and target label Y (e.g., Loan_Status, indicating loan approval).
 
-7.Divide the data into training and testing sets
+7. Divide the data into training and testing sets
 Use Sklearn’s train_test_split to split the data into training and testing sets (e.g., 80% training and 20% testing).
 
-8.Standardize the features
+8. Standardize the features
 Use Sklearn’s StandardScaler to standardize the features in both the training and testing sets to have a mean of 0 and standard deviation of 1.
 
-9.Choose and train a classifier
+9. Choose and train a classifier
 Select a classifier such as Logistic Regression or Random Forest. Train the model on the training data using model.fit(X_train, Y_train).
 
-10.Evaluate model accuracy
+10. Evaluate model accuracy
 Make predictions on the test set using model.predict(X_test). Calculate the accuracy using accuracy_score from Sklearn to evaluate how well the model performs.
 
-11.Deploy the Streamlit app for online access
+11. Deploy the Streamlit app for online access
 Deploy the application, making it accessible to users who want to interact with the loan approval prediction model.
 
-12.Stop the program.
+12. Stop the program.
 
 ## Program
 
