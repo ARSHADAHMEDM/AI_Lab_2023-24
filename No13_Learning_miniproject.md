@@ -8,24 +8,47 @@ The aim of this project is to develop a machine learning-based heart disease pre
 
 ## Algorithm
 
-1. Start the program.
-2. Import necessary packages, including NumPy, Pandas, and Sklearn for data handling, model building, and evaluation, as well as Streamlit for creating the user interface.
-3. Load the heart disease dataset using Pandas.
-4. Check for missing values in the dataset. Handle any missing values by filling with median values or dropping rows if necessary.
-5. Split the data into input features (X) and the target label (Y), where Y represents the presence or absence of heart disease.
-6. Divide the data into training and testing sets using the `train_test_split` function from Sklearn.
-7. Standardize the features in both training and testing sets using `StandardScaler` to ensure they have a mean of 0 and a standard deviation of 1.
-8. Choose a classifier, such as Random Forest or Logistic Regression, and train it on the training data.
-9. Test the model’s accuracy by making predictions on the test set and calculating accuracy using `accuracy_score`.
-10. Define a `predict_heart_disease` function that takes user input for the required features and outputs the model's prediction.
-11. Build an interactive interface using Streamlit where users can input their data and view the prediction result.
-12. Deploy the Streamlit app for online access, enabling users to interact with the heart disease prediction model.
-13. Stop the program.
+1.Start the program.
+
+2.Import necessary packages
+Import libraries, including:
+
+3.NumPy for numerical operations,
+Pandas for data handling,
+Sklearn (specifically modules for model building, evaluation, and preprocessing),
+Streamlit for creating the user interface.
+Load the loan dataset
+Use pd.read_csv() in Pandas to load the loan dataset into a DataFrame.
+
+4.Check for missing values in the dataset
+Identify missing values using df.isnull().sum(). Handle missing values either by filling with median values (using fillna(df.median())) or dropping rows if necessary.
+
+5.Encode categorical features
+If the dataset contains categorical variables, convert them into numerical values using techniques like one-hot encoding or label encoding with Sklearn’s LabelEncoder or pd.get_dummies().
+
+6.Split the data into input features (X) and target label (Y)
+Define input features X (the predictor variables) and target label Y (e.g., Loan_Status, indicating loan approval).
+
+7.Divide the data into training and testing sets
+Use Sklearn’s train_test_split to split the data into training and testing sets (e.g., 80% training and 20% testing).
+
+8.Standardize the features
+Use Sklearn’s StandardScaler to standardize the features in both the training and testing sets to have a mean of 0 and standard deviation of 1.
+
+9.Choose and train a classifier
+Select a classifier such as Logistic Regression or Random Forest. Train the model on the training data using model.fit(X_train, Y_train).
+
+10.Evaluate model accuracy
+Make predictions on the test set using model.predict(X_test). Calculate the accuracy using accuracy_score from Sklearn to evaluate how well the model performs.
+
+11.Deploy the Streamlit app for online access
+Deploy the application, making it accessible to users who want to interact with the loan approval prediction model.
+
+12.Stop the program.
 
 ## Program
 
 ```python
-pip install --upgrade numba ydata-profiling visions
 import pandas as pd 
 import plotly.express as px
 from ydata_profiling import ProfileReport
